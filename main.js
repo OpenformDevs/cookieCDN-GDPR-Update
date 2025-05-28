@@ -112,133 +112,137 @@ class Banner {
     </div>`;
 
     const banner = `
-    <div class='ofc-message-container'>
-        <h3>This website uses cookies</h3>
-        <p>This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.</p>
-    </div>
-    <div class='cookie-button-container'>
-        <button data-item='js-accept-button' type='button' class='cookie-button'>ACCEPT</button>
-        <button data-item='js-reject-button' type='button' class='cookie-button'>DECLINE</button>
-    </div>
-    <div class='ofc-close-container'>
-        <button class='cookie-button ofc-close' data-item='js-close-button'><img src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/close_icon.svg" /></button>
-    </div>
-    <div class='settings'>
-        <button data-item='js-settings-button' type='button' class='cookie-button'>Settings</button>
-        <p>Powered by <span class='cookie-jar-link'>CookieJar</span></p>
+    <div class="cookiejar-container">
+      <div class='ofc-message-container'>
+          <h3>This website uses cookies</h3>
+          <p>This website uses cookies to improve user experience. By using our website you consent to all cookies in accordance with our Cookie Policy.</p>
+      </div>
+      <div class='cookie-button-container'>
+          <button data-item='js-accept-button' type='button' class='cookie-button'>ACCEPT</button>
+          <button data-item='js-reject-button' type='button' class='cookie-button'>DECLINE</button>
+      </div>
+      <div class='ofc-close-container'>
+          <button class='cookie-button ofc-close' data-item='js-close-button'><img src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/close_icon.svg" /></button>
+      </div>
+      <div class='settings'>
+          <button data-item='js-settings-button' type='button' class='cookie-button'>Settings</button>
+          <p>Powered by <span class='cookie-jar-link'>CookieJar</span></p>
+      </div>
     </div>
     `;
 
     const settings = `
-  <div data-item='js-settings-content' class='ofc-settings-content'>
-    <h2>This website uses cookies</h2>
-  <!-- <img src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/cookieJar.jpg" class="cookieJar-logo" /> -->
-    <div class="settings-content-container">
-    <div class='ofc-settings-content-header'>
-      <p>PRIVACY PREFERENCE CENTER</p>
-      <button class='ofc-close ofc-popclose' data-item='js-settings-close-button'><img src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/close_icon.svg" /></button>
-    </div>
-    <div class="privacy-content-text">
-        <p class="ofc-privacytext">Cookies are small text files that are placed on your computer by websites that you visit. Websites use cookies to help users navigate efficiently and perform certain functions. Cookies that are required for the website to operate properly are allowed to be set without your permission. All other cookies need to be approved before they can be set in the browser.</p> <br />
-        <p>You can change your consent to cookie usage at any time on our Privacy Policy page.<br />
-        We also use cookies to collect data for the purpose of personalizing and measuring the effectiveness of our advertising. <br />
-        For more details, visit the <a href="https://policies.google.com/privacy" target=_blank>Google Privacy Policy</a>.</p>
-        
-    </div>
-    <div class='ofc-settings'>
-        <div class='ofc-accordion'>
-          <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
-              <p>Strictly necessary cookies</p>
-              <img class="lock-icon" src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/lock-locked_icon.svg" />
-              <!-- Strictly necessary cookies are always active and not toggleable by user -->
-          </div>            
-          <div class='ofc-accordion-body' style='display:none;'>
-              <p>These are essential cookies that are necessary for a website to function properly. 
-              They enable basic functions such as page navigation, access to secure areas, and ensuring that the website operates correctly. 
-              Strictly necessary cookies are typically set in response to user actions, such as logging in or filling out forms. 
-              They do not require user consent as they are crucial for the website's operation.</p>
-          </div>
-        </div>
-        <hr>
-        <div class='ofc-accordion'>
-          <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
-              <p>Performance cookies</p>
-              <label class="ofc-toggle-switch" data-item="js-toggle-pC">
-              <input type="checkbox">
-              <span class="ofc-toggle-slider"></span>
-            </label>
-          </div>       
-          <div class='ofc-accordion-body' style='display:none;'>
-            <p>Performance cookies collect anonymous information about how visitors use a website. 
-            They are used to improve website performance and provide a better user experience. 
-            These cookies gather data about the pages visited, the time spent on the website, and any error messages encountered. 
-            The information collected is aggregated and anonymised, and it helps website owners understand and analyse website traffic patterns.</p>
-          </div>
-        </div>
-        <hr>
-        <div class='ofc-accordion'>
-          <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
-              <p>Marketing cookies</p>
-              <label class="ofc-toggle-switch" data-item="js-toggle-mC">
-              <input type="checkbox">
-              <span class="ofc-toggle-slider"></span>
-            </label>
-          </div>       
-          <div class='ofc-accordion-body' style='display:none;'>
-            <p>Marketing cookies are used to track users across websites and build a profile of their interests. 
-            These cookies are often set by advertising networks or third-party advertisers. 
-            They are used to deliver targeted advertisements and measure the effectiveness of marketing campaigns. 
-            Marketing cookies may collect data such as browsing habits, visited websites, and interaction with ads. 
-            Consent from the user is usually required for the use of marketing cookies.</p>
-          </div>
-        </div>
-        <hr>
-        <div class='ofc-accordion'>
-          <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
-              <p>Functional cookies</p>
-              <label class="ofc-toggle-switch" data-item="js-toggle-fC">
-              <input type="checkbox">
-              <span class="ofc-toggle-slider"></span>
-            </label>
-          </div>       
-          <div class='ofc-accordion-body' style='display:none;'>
-            <p>Functional cookies enable enhanced functionality and customisation on a website. 
-            They remember user preferences, such as language settings and personalised preferences, to provide a more personalised experience. 
-            These cookies may also be used to remember changes made by the user, such as font size or layout preferences. 
-            Functional cookies do not track or store personal information and are usually set in response to user actions.</p>
-          </div>
-        </div>
-        <hr>
-        <div class='ofc-accordion'>
-          <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
-              <p>Analytic cookies</p>
-              <label class="ofc-toggle-switch" data-item="js-toggle-aC">
-              <input type="checkbox">
-              <span class="ofc-toggle-slider"></span>
-            </label>
-          </div>       
-          <div class='ofc-accordion-body' style='display:none;'>
-            <p>Analytic cookies are similar to performance cookies as they collect information about how users interact with a website. However, 
-            unlike performance cookies, analytic cookies provide more detailed and comprehensive data. 
-            They track and analyse user behaviour, such as click patterns, mouse movements, and scroll depth, 
-            to gain insights into user engagement and website performance. 
-            Analytic cookies help website owners make data-driven decisions to optimize their websites.</p>
-          </div>
-        </div>
-        <hr>
-    </div>
-    </div>
-    <div class="button-container">
-      <div class="left-buttons">
-        <button class='ofc-popbutton' data-item='js-accept-button'>ACCEPT</button>
-        <button class='ofc-popbutton' data-item='js-reject-button'>DECLINE</button>
+  <div class="cookiejar-container">
+    <div data-item='js-settings-content' class='ofc-settings-content'>
+      <h2>This website uses cookies</h2>
+    <!-- <img src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/cookieJar.jpg" class="cookieJar-logo" /> -->
+      <div class="settings-content-container">
+      <div class='ofc-settings-content-header'>
+        <p>PRIVACY PREFERENCE CENTER</p>
+        <button class='ofc-close ofc-popclose' data-item='js-settings-close-button'><img src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/close_icon.svg" /></button>
       </div>
-      <button class='ofc-popbutton' data-item='js-confirm-button'>SAVE & CLOSE</button>
-      <p class="powered-by">Powered by <span class='cookie-jar-link'>CookieJar</span></p>
-    </div>
-    <!-- <div class="powered-by">
-      <p>Powered by <span class='cookie-jar-link'>CookieJar</span></p>
-    </div> -->
+      <div class="privacy-content-text">
+          <p class="ofc-privacytext">Cookies are small text files that are placed on your computer by websites that you visit. Websites use cookies to help users navigate efficiently and perform certain functions. Cookies that are required for the website to operate properly are allowed to be set without your permission. All other cookies need to be approved before they can be set in the browser.</p> <br />
+          <p>You can change your consent to cookie usage at any time on our Privacy Policy page.<br />
+          We also use cookies to collect data for the purpose of personalizing and measuring the effectiveness of our advertising. <br />
+          For more details, visit the <a href="https://policies.google.com/privacy" target=_blank>Google Privacy Policy</a>.</p>
+          
+      </div>
+      <div class='ofc-settings'>
+          <div class='ofc-accordion'>
+            <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
+                <p>Strictly necessary cookies</p>
+                <img class="lock-icon" src="https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/images/lock-locked_icon.svg" />
+                <!-- Strictly necessary cookies are always active and not toggleable by user -->
+            </div>            
+            <div class='ofc-accordion-body' style='display:none;'>
+                <p>These are essential cookies that are necessary for a website to function properly. 
+                They enable basic functions such as page navigation, access to secure areas, and ensuring that the website operates correctly. 
+                Strictly necessary cookies are typically set in response to user actions, such as logging in or filling out forms. 
+                They do not require user consent as they are crucial for the website's operation.</p>
+            </div>
+          </div>
+          <hr>
+          <div class='ofc-accordion'>
+            <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
+                <p>Performance cookies</p>
+                <label class="ofc-toggle-switch" data-item="js-toggle-pC">
+                <input type="checkbox">
+                <span class="ofc-toggle-slider"></span>
+              </label>
+            </div>       
+            <div class='ofc-accordion-body' style='display:none;'>
+              <p>Performance cookies collect anonymous information about how visitors use a website. 
+              They are used to improve website performance and provide a better user experience. 
+              These cookies gather data about the pages visited, the time spent on the website, and any error messages encountered. 
+              The information collected is aggregated and anonymised, and it helps website owners understand and analyse website traffic patterns.</p>
+            </div>
+          </div>
+          <hr>
+          <div class='ofc-accordion'>
+            <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
+                <p>Marketing cookies</p>
+                <label class="ofc-toggle-switch" data-item="js-toggle-mC">
+                <input type="checkbox">
+                <span class="ofc-toggle-slider"></span>
+              </label>
+            </div>       
+            <div class='ofc-accordion-body' style='display:none;'>
+              <p>Marketing cookies are used to track users across websites and build a profile of their interests. 
+              These cookies are often set by advertising networks or third-party advertisers. 
+              They are used to deliver targeted advertisements and measure the effectiveness of marketing campaigns. 
+              Marketing cookies may collect data such as browsing habits, visited websites, and interaction with ads. 
+              Consent from the user is usually required for the use of marketing cookies.</p>
+            </div>
+          </div>
+          <hr>
+          <div class='ofc-accordion'>
+            <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
+                <p>Functional cookies</p>
+                <label class="ofc-toggle-switch" data-item="js-toggle-fC">
+                <input type="checkbox">
+                <span class="ofc-toggle-slider"></span>
+              </label>
+            </div>       
+            <div class='ofc-accordion-body' style='display:none;'>
+              <p>Functional cookies enable enhanced functionality and customisation on a website. 
+              They remember user preferences, such as language settings and personalised preferences, to provide a more personalised experience. 
+              These cookies may also be used to remember changes made by the user, such as font size or layout preferences. 
+              Functional cookies do not track or store personal information and are usually set in response to user actions.</p>
+            </div>
+          </div>
+          <hr>
+          <div class='ofc-accordion'>
+            <div class="ofc-accordion-head" data-item="js-settings-accordion-head">
+                <p>Analytic cookies</p>
+                <label class="ofc-toggle-switch" data-item="js-toggle-aC">
+                <input type="checkbox">
+                <span class="ofc-toggle-slider"></span>
+              </label>
+            </div>       
+            <div class='ofc-accordion-body' style='display:none;'>
+              <p>Analytic cookies are similar to performance cookies as they collect information about how users interact with a website. However, 
+              unlike performance cookies, analytic cookies provide more detailed and comprehensive data. 
+              They track and analyse user behaviour, such as click patterns, mouse movements, and scroll depth, 
+              to gain insights into user engagement and website performance. 
+              Analytic cookies help website owners make data-driven decisions to optimize their websites.</p>
+            </div>
+          </div>
+          <hr>
+      </div>
+      </div>
+      <div class="button-container">
+        <div class="left-buttons">
+          <button class='ofc-popbutton' data-item='js-accept-button'>ACCEPT</button>
+          <button class='ofc-popbutton' data-item='js-reject-button'>DECLINE</button>
+        </div>
+        <button class='ofc-popbutton' data-item='js-confirm-button'>SAVE & CLOSE</button>
+        <p class="powered-by">Powered by <span class='cookie-jar-link'>CookieJar</span></p>
+      </div>
+      <!-- <div class="powered-by">
+        <p>Powered by <span class='cookie-jar-link'>CookieJar</span></p>
+      </div> -->
+      </div>
     </div>`;
     containerNode.innerHTML = banner;
     settingsNode.innerHTML = settings;

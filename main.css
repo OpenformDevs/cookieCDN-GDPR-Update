@@ -14,6 +14,7 @@
 .cookiejar-container p,
 .cookiejar-container button {
   font-family: "Roboto Condensed", sans-serif !important;
+  letter-spacing: 0 !important;
 }
 
 .settings-reject-all {
@@ -319,6 +320,14 @@ img.lock-icon {
   float: right !important;
   max-width: 25px !important;
   min-width: 25px !important;
+}
+
+.ofc-close:hover {
+  padding: 0 !important;
+}
+
+.ofc-close:focus {
+  outline: 0 !important;
 }
 
 .ofc-close img {

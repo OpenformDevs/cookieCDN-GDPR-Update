@@ -49,6 +49,9 @@ class Banner {
       this.settingsButton = document.querySelector(
         "[data-item='js-settings-button']"
       );
+      this.settingsButton2 = document.querySelector(
+        "[data-item='js-settings-button-2']"
+      );
       this.rejectButtons = document.querySelectorAll(
         "[data-item='js-reject-button']"
       );
@@ -308,6 +311,12 @@ class Banner {
   createEventListeners() {
     if (this.settingsButton) {
       this.settingsButton.addEventListener("click", () => {
+        this.syncTogglesToPreferences(); // Sync toggles when settings are opened
+        this.showElement(this.settingsMenu);
+      });
+    }
+    if (this.settingsButton2) {
+      this.settingsButton2.addEventListener("click", () => {
         this.syncTogglesToPreferences(); // Sync toggles when settings are opened
         this.showElement(this.settingsMenu);
       });

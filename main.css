@@ -425,7 +425,7 @@ img.lock-icon {
 
 .ofc-accordion-head > p::before {
   content: "";
-  background-image: url(/images/right-arrow.png);
+  background-image: url(images/right-arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -17,6 +17,10 @@
   letter-spacing: 0 !important;
 }
 
+.cookiejar-container > .ofc-message-container > h3 {
+  color: #333 !important;
+  text-transform: none !important;
+
 .settings-reject-all {
   display: none !important;
 }

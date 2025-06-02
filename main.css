@@ -553,6 +553,13 @@ hr {
     height: 90%;
   }
 
+/*   .settings-content-container {
+    max-height: 50vh;
+    overflow-y: scroll;
+  } */
+}
+
+@media (max-height: 800px) {
   .settings-content-container {
     max-height: 50vh;
     overflow-y: scroll;

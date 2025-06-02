@@ -20,6 +20,7 @@
 .cookiejar-container > .ofc-message-container > h3 {
   color: #333 !important;
   text-transform: none !important;
+}
 
 .settings-reject-all {
   display: none !important;
@@ -199,11 +200,11 @@ img.lock-icon {
   /* margin-top: 30px; */
 }
 
-.ofc-popbutton {
+/* .ofc-popbutton {
   background: #000 !important;
   color: #fff !important;
   margin-right: 5px !important;
-}
+} */
 
 .left-buttons > .ofc-popbutton:last-child {
   color: #000 !important;

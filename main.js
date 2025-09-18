@@ -466,11 +466,12 @@ class Banner {
   }
 
   handleConsent() {
+    // It's useful to know the previous state
+    const previousConsent = this.getCookie("ofcPer");
+
     this.setCookie("ofcPer", "yes", 7);
 
     // Set all preference cookies to true
-    // The `setPrefCookie("all", true, 7, true)` type of call was confusing.
-    // Let's be explicit.
     this.setPrefCookie("Strictly", true, 7); // Always true
     this.setPrefCookie("Performance", true, 7);
     this.setPrefCookie("Analytics", true, 7);
@@ -479,25 +480,18 @@ class Banner {
 
     this.updateAllTogglesState(true); // Update UI toggles to checked
 
-    // Re-apply cookies that were pending or based on full consent
-    // This should ideally re-evaluate all scripts/cookies that might have been blocked.
-    // For now, we re-set pending cookies. More robust would be to re-run categorize and apply logic.
-    if (this.pendingCookies && this.pendingCookies.length > 0) {
-      for (let i = 0; i < this.pendingCookies.length; i++) {
-        const parts = this.pendingCookies[i].split("=");
-        const cookieName = parts[0] ? parts[0].trim() : null;
-        const cookieValue = parts[1] ? parts[1].trim() : "";
-        if (cookieName) {
-          this.setCookie(cookieName, cookieValue, 7); // Set with 7-day expiry
-        }
-      }
-    }
-    // this.pendingCookies = []; // Clear pending list as they are now processed
-
+    // UI updates before reload
     this.hideElement(this.bannerContainer);
     this.hideElement(this.settingsMenu);
     this.showElement(this.cookieCrumb);
+
+    // If consent was previously 'no' or not set, a reload is necessary
+    // to apply the new settings and load any blocked scripts.
+    if (previousConsent !== "yes") {
+      window.location.reload();
+    }
   }
+
 
   handleRejection() {
     this.setCookie("ofcPer", "no", 7);

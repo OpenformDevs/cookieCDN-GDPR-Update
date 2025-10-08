@@ -714,7 +714,7 @@ function parseCSV(csvData) {
 
 // --- Initialization ---
 readCSVFile(
-  "https://raw.githubusercontent.com/JoshOpenform/cookieCDN/main/open-cookie-database.csv"
+  "https://raw.githubusercontent.com/OpenformDevs/cookieCDN-GDPR-Update/main/open-cookie-database.csv"
 )
   .then((data) => {
     if (Object.keys(data).length === 0) {

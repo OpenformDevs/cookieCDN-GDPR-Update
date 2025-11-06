@@ -681,17 +681,19 @@ function parseCSV(csvData) {
 }
 
 // --- Initialization (Unchanged) ---
-readCSVFile(
-  "https://raw.githubusercontent.com/OpenformDevs/cookieCDN-GDPR-Update/main/open-cookie-database.csv"
-)
-  .then((data) => {
-    if (Object.keys(data).length === 0) {
-      console.warn(
-        "CSV data is empty or could not be parsed correctly. Banner might not categorize cookies effectively."
-      );
-    }
-    const banner = new Banner(data);
-  })
-  .catch((error) => {
-    console.error("Failed to initialize banner with CSV data:", error);
-  });
+document.addEventListener('DOMContentLoaded', () => {
+	readCSVFile(
+	  "https://raw.githubusercontent.com/OpenformDevs/cookieCDN-GDPR-Update/main/open-cookie-database.csv"
+	)
+	  .then((data) => {
+	    if (Object.keys(data).length === 0) {
+	      console.warn(
+	        "CSV data is empty or could not be parsed correctly. Banner might not categorize cookies effectively."
+	      );
+	    }
+	    const banner = new Banner(data);
+	  })
+	  .catch((error) => {
+	    console.error("Failed to initialize banner with CSV data:", error);
+	  });
+});
